@@ -1,0 +1,44 @@
+.header-wrapper {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(-45deg, #050404, #2e1c2b, #4a1942, #893168);
+  background-size: 300%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: backgroundTransition 8s ease-in-out infinite;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.social-media {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 1rem 4rem;
+  border: 1px solid #fff;
+  min-width: 4rem;
+  transition: 0.5s cubic-bezier(0.55, 0.03, 0.7, 0.4);
+}
+
+.social-media a:hover {
+  color: #2e1c2b;
+  background: #fff;
+}
+
+@keyframes backgroundTransition {
+  0%, 100% { background-position: 0% 80%;}
+
+  50% {background-position: 80% 100%;}
+}
